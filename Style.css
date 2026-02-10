@@ -1,0 +1,15 @@
+.about, .how-it-works {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.how-it-works li {
+  margin-bottom: 10px;
+}
