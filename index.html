@@ -16,15 +16,15 @@
 }
 
 body {
-  background: #0f172a;
-  color: #ffffff;
+  background: #111827; /* brighter dark */
+  color: #f9fafb;
   line-height: 1.6;
 }
 
 /* NAV */
 nav {
-  background: #0b1220;
-  padding: 20px 0;
+  background: #1f2937;
+  padding: 18px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -46,7 +46,7 @@ nav {
 }
 
 nav a {
-  color: #cbd5e1;
+  color: #d1d5db;
   text-decoration: none;
   margin-left: 20px;
   font-size: 0.9rem;
@@ -69,7 +69,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
@@ -81,8 +81,8 @@ header p {
 
 .btn {
   display: inline-block;
-  padding: 12px 26px;
-  background: #3b82f6;
+  padding: 13px 28px;
+  background: #2563eb;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -91,7 +91,7 @@ header p {
 }
 
 .btn:hover {
-  background: #2563eb;
+  background: #1d4ed8;
 }
 
 /* SECTIONS */
@@ -105,73 +105,79 @@ section {
   margin-bottom: 50px;
 }
 
-.grid {
+/* PRICING */
+.pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
-.card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 8px;
+.pricing-card {
+  background: #1f2937;
+  padding: 35px;
+  border-radius: 10px;
+  text-align: center;
   transition: 0.3s;
+  border: 1px solid #374151;
 }
 
-.card:hover {
-  transform: translateY(-6px);
+.pricing-card:hover {
+  transform: translateY(-8px);
+  border-color: #2563eb;
 }
 
-.card h3 {
-  margin-bottom: 15px;
+.popular {
+  border: 2px solid #2563eb;
 }
 
-.card p {
-  color: #94a3b8;
+.price {
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: 700;
 }
 
-/* PRICING HIGHLIGHT */
-.highlight {
-  border: 2px solid #3b82f6;
+.pricing-card ul {
+  list-style: none;
+  margin: 20px 0;
+  color: #9ca3af;
 }
 
-/* FLOATING REVIEW BADGE */
-.review-badge {
+.pricing-card ul li {
+  margin-bottom: 8px;
+}
+
+/* FLOATING REVIEW TICKER */
+.review-ticker {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #1e293b;
-  padding: 12px 18px;
-  border-radius: 30px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
+  background: #1f2937;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #374151;
 }
 
-/* REVIEW FORM */
-form {
-  max-width: 500px;
-  margin: 30px auto 0;
-  display: flex;
-  flex-direction: column;
+.review-track {
+  display: inline-block;
+  padding: 15px 0;
+  animation: scroll 25s linear infinite;
 }
 
-input, textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: none;
+.review-track span {
+  margin-right: 80px;
+  color: #e5e7eb;
 }
 
-textarea {
-  resize: none;
-  height: 100px;
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
+/* FOOTER */
 footer {
-  background: #0b1220;
   text-align: center;
   padding: 40px 0;
-  color: #64748b;
+  color: #6b7280;
 }
 </style>
 </head>
@@ -183,7 +189,6 @@ footer {
     <div class="logo">KC Services</div>
     <div>
       <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
       <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank">Book Call</a>
     </div>
   </div>
@@ -191,83 +196,59 @@ footer {
 
 <header>
   <div class="container">
-    <h1>Automate Your Business & Book More Clients</h1>
+    <h1>Automate Your Business. Close More Clients.</h1>
     <p>
-      Websites, booking systems, and simple automation that help local businesses
-      respond faster and close more jobs.
+      Clean websites, booking systems, and smart automation built for local businesses 
+      that want faster responses and more booked jobs.
     </p>
     <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank" class="btn">
-      Book a Free Call
+      Schedule Free Call
     </a>
   </div>
 </header>
 
 <section id="pricing">
   <div class="container">
-    <h2 class="section-title">Packages</h2>
+    <h2 class="section-title">Simple Pricing</h2>
 
-    <div class="grid">
+    <div class="pricing-grid">
 
-      <div class="card">
-        <h3>Starter</h3>
-        <p>
-          $300 One-Time Setup<br><br>
-          OR<br><br>
-          $120/month (3 months)
-        </p>
+      <div class="pricing-card">
+        <h3>Launch</h3>
+        <div class="price">$349</div>
+        <p>One-Time Setup</p>
+        <ul>
+          <li>1-Page Website</li>
+          <li>Mobile Optimized</li>
+          <li>Basic Contact Form</li>
+        </ul>
       </div>
 
-      <div class="card highlight">
-        <h3>Growth (Most Popular)</h3>
-        <p>
-          $600 One-Time Setup<br><br>
-          OR<br><br>
-          $220/month (3 months)
-        </p>
+      <div class="pricing-card popular">
+        <h3>Growth</h3>
+        <div class="price">$649</div>
+        <p>One-Time Setup</p>
+        <ul>
+          <li>Multi-Section Website</li>
+          <li>Online Booking Setup</li>
+          <li>Email Confirmation</li>
+          <li>Basic Automation</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h3>Pro Automation</h3>
-        <p>
-          $900 One-Time Setup<br><br>
-          OR<br><br>
-          $320/month (3 months)
-        </p>
+      <div class="pricing-card">
+        <h3>Scale</h3>
+        <div class="price">$899</div>
+        <p>One-Time Setup</p>
+        <ul>
+          <li>Full Website Build</li>
+          <li>Booking + SMS Setup</li>
+          <li>Lead Follow-Up Automation</li>
+          <li>30 Days Support</li>
+        </ul>
       </div>
 
     </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="container">
-    <h2 class="section-title">Client Reviews</h2>
-
-    <div class="grid">
-      <div class="card">
-        <p>"KC Services helped us automate bookings and we instantly saw faster response times."</p>
-        <strong>- Local Business Owner</strong>
-      </div>
-
-      <div class="card">
-        <p>"The website upgrade made us look way more professional."</p>
-        <strong>- Service Company</strong>
-      </div>
-
-      <div class="card">
-        <p>"Simple setup and easy to work with. Highly recommend."</p>
-        <strong>- Small Business Client</strong>
-      </div>
-    </div>
-
-    <h3 style="text-align:center; margin-top:50px;">Leave a Review</h3>
-
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <textarea placeholder="Write your review here..." required></textarea>
-      <button class="btn" type="submit">Submit Review</button>
-    </form>
-
   </div>
 </section>
 
@@ -275,8 +256,14 @@ footer {
   <p>© 2026 KC Services</p>
 </footer>
 
-<div class="review-badge">
-⭐ 4.9 Rating | 27 Reviews
+<!-- FLOATING MOVING REVIEWS -->
+<div class="review-ticker">
+  <div class="review-track">
+    <span>⭐ 4.9 Rating | "Website looks super professional now." – Local Contractor</span>
+    <span>⭐ 5.0 Rating | "Booking automation saved us hours every week." – Cleaning Company</span>
+    <span>⭐ 4.8 Rating | "Fast setup and easy to work with." – Service Business Owner</span>
+    <span>⭐ 5.0 Rating | "We started getting more booked calls immediately." – Small Business</span>
+  </div>
 </div>
 
 </body>
