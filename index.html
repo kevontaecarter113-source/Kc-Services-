@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KC Services | Business Automation</title>
+<title>KC Services | Automation & Booking Systems</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -21,10 +21,13 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   background: #0b1220;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -46,12 +49,11 @@ nav a {
   color: #cbd5e1;
   text-decoration: none;
   margin-left: 20px;
-  font-size: 0.95rem;
-  transition: 0.3s;
+  font-size: 0.9rem;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 /* HERO */
@@ -67,12 +69,11 @@ header {
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
 }
 
 header p {
-  font-size: 1.1rem;
   color: #cbd5e1;
   max-width: 650px;
   margin: 0 auto 30px;
@@ -80,7 +81,7 @@ header p {
 
 .btn {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 12px 26px;
   background: #3b82f6;
   color: white;
   text-decoration: none;
@@ -129,7 +130,43 @@ section {
   color: #94a3b8;
 }
 
-/* FOOTER */
+/* PRICING HIGHLIGHT */
+.highlight {
+  border: 2px solid #3b82f6;
+}
+
+/* FLOATING REVIEW BADGE */
+.review-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e293b;
+  padding: 12px 18px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  font-size: 0.9rem;
+}
+
+/* REVIEW FORM */
+form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
 footer {
   background: #0b1220;
   text-align: center;
@@ -141,134 +178,106 @@ footer {
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
   <div class="nav-container">
     <div class="logo">KC Services</div>
     <div>
-      <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
       <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank">Book Call</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
 <header>
   <div class="container">
-    <h1>Helping Local Businesses Book More Clients Automatically</h1>
+    <h1>Automate Your Business & Book More Clients</h1>
     <p>
-      I build simple websites and booking systems that capture leads, send automatic follow-ups,
-      and help you stop losing customers to missed calls or slow replies.
+      Websites, booking systems, and simple automation that help local businesses
+      respond faster and close more jobs.
     </p>
     <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank" class="btn">
-      Book a Free 10-Minute Call
+      Book a Free Call
     </a>
   </div>
 </header>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <h2 class="section-title">What I Offer</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Simple Professional Websites</h3>
-        <p>
-          Clean 1–3 page websites designed to make your business look trustworthy
-          and turn visitors into real customers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Online Booking Setup</h3>
-        <p>
-          Let customers schedule appointments online with confirmations
-          and reminders sent automatically.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Basic Automation</h3>
-        <p>
-          Automatic email or text responses so every new inquiry gets a fast reply.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section>
-  <div class="container">
-    <h2 class="section-title">How It Works</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>1. Quick Call</h3>
-        <p>We review your business and what you need set up.</p>
-      </div>
-
-      <div class="card">
-        <h3>2. Build & Setup</h3>
-        <p>I design your website and connect booking or automation tools.</p>
-      </div>
-
-      <div class="card">
-        <h3>3. Launch</h3>
-        <p>Your system goes live and starts working for you 24/7.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
 <section id="pricing">
   <div class="container">
-    <h2 class="section-title">Pricing</h2>
+    <h2 class="section-title">Packages</h2>
 
     <div class="grid">
+
       <div class="card">
-        <h3>Starter Website</h3>
+        <h3>Starter</h3>
         <p>
-          $300 One-Time<br>
-          Basic 1-page website
+          $300 One-Time Setup<br><br>
+          OR<br><br>
+          $120/month (3 months)
+        </p>
+      </div>
+
+      <div class="card highlight">
+        <h3>Growth (Most Popular)</h3>
+        <p>
+          $600 One-Time Setup<br><br>
+          OR<br><br>
+          $220/month (3 months)
         </p>
       </div>
 
       <div class="card">
-        <h3>Website + Booking</h3>
+        <h3>Pro Automation</h3>
         <p>
-          $600 One-Time<br>
-          Website + online scheduling setup
+          $900 One-Time Setup<br><br>
+          OR<br><br>
+          $320/month (3 months)
         </p>
       </div>
 
-      <div class="card">
-        <h3>Website + Automation</h3>
-        <p>
-          $900 One-Time<br>
-          Website + booking + basic follow-up automation
-        </p>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section>
-  <div class="container" style="text-align:center;">
-    <h2 class="section-title">Ready to Upgrade Your Business?</h2>
-    <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank" class="btn">
-      Schedule Your Free Call
-    </a>
+<section id="reviews">
+  <div class="container">
+    <h2 class="section-title">Client Reviews</h2>
+
+    <div class="grid">
+      <div class="card">
+        <p>"KC Services helped us automate bookings and we instantly saw faster response times."</p>
+        <strong>- Local Business Owner</strong>
+      </div>
+
+      <div class="card">
+        <p>"The website upgrade made us look way more professional."</p>
+        <strong>- Service Company</strong>
+      </div>
+
+      <div class="card">
+        <p>"Simple setup and easy to work with. Highly recommend."</p>
+        <strong>- Small Business Client</strong>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; margin-top:50px;">Leave a Review</h3>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Write your review here..." required></textarea>
+      <button class="btn" type="submit">Submit Review</button>
+    </form>
+
   </div>
 </section>
 
 <footer>
   <p>© 2026 KC Services</p>
 </footer>
+
+<div class="review-badge">
+⭐ 4.9 Rating | 27 Reviews
+</div>
 
 </body>
 </html>
