@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KC Services | Websites & Business Automation</title>
+<title>KC Services | Websites & Automation</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -21,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
 nav {
   background: #1e293b;
   padding: 18px 0;
@@ -42,7 +41,6 @@ nav {
 .logo {
   font-weight: 700;
   font-size: 1.2rem;
-  letter-spacing: 1px;
 }
 
 nav a {
@@ -56,7 +54,6 @@ nav a:hover {
   color: white;
 }
 
-/* HERO */
 header {
   padding: 110px 0 70px 0;
   text-align: center;
@@ -69,7 +66,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
 }
 
@@ -121,7 +118,6 @@ header p {
   100% { transform: translateX(-50%); }
 }
 
-/* SECTION */
 section {
   padding: 90px 0;
 }
@@ -132,34 +128,9 @@ section {
   margin-bottom: 60px;
 }
 
-/* SERVICES */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.service-card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #334155;
-  transition: 0.3s;
-}
-
-.service-card:hover {
-  border-color: #2563eb;
-  transform: translateY(-6px);
-}
-
-.service-card h3 {
-  margin-bottom: 15px;
-}
-
-/* PRICING */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -182,9 +153,15 @@ section {
 }
 
 .price {
-  font-size: 2.1rem;
+  font-size: 2rem;
   margin: 20px 0;
   font-weight: 700;
+}
+
+.payment-option {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
 .pricing-card ul {
@@ -195,6 +172,15 @@ section {
 
 .pricing-card ul li {
   margin-bottom: 10px;
+}
+
+.maintenance {
+  margin-top: 60px;
+  text-align: center;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #334155;
 }
 
 footer {
@@ -211,7 +197,6 @@ footer {
   <div class="nav-container">
     <div class="logo">KC Services</div>
     <div>
-      <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="tel:2672651426">Call</a>
     </div>
@@ -220,10 +205,10 @@ footer {
 
 <header>
   <div class="container">
-    <h1>Modern Websites & Automation for Local Businesses</h1>
+    <h1>Websites & Automation Built for Local Businesses</h1>
     <p>
-      We build clean, high-converting websites and booking systems 
-      that help service businesses respond faster and close more jobs.
+      We create clean, professional websites and simple automation systems 
+      that help service businesses respond faster and book more jobs.
     </p>
     <a href="tel:2672651426" class="btn">
       Call 267-265-1426
@@ -231,44 +216,17 @@ footer {
   </div>
 </header>
 
-<!-- MOVING REVIEWS -->
 <section class="review-section">
   <div class="review-track">
-    <div class="review-item">⭐ 4.9 — "KC Services helped modernize our brand completely." – Summit Plumbing Co.</div>
-    <div class="review-item">⭐ 5.0 — "Booking automation improved our response time instantly." – Liberty Cleaning Group</div>
+    <div class="review-item">⭐ 4.9 — "Completely upgraded our online presence." – Summit Plumbing Co.</div>
+    <div class="review-item">⭐ 5.0 — "Booking automation improved response time instantly." – Liberty Cleaning Group</div>
     <div class="review-item">⭐ 4.8 — "Professional design and smooth process." – Keystone Auto Detail</div>
-    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs every week." – NorthStar Roofing</div>
-    <div class="review-item">⭐ 4.9 — "Reliable and easy to work with." – Prime Edge Landscaping</div>
+    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs weekly." – NorthStar Roofing</div>
 
-    <!-- Duplicate for smooth scroll -->
-    <div class="review-item">⭐ 4.9 — "KC Services helped modernize our brand completely." – Summit Plumbing Co.</div>
-    <div class="review-item">⭐ 5.0 — "Booking automation improved our response time instantly." – Liberty Cleaning Group</div>
+    <div class="review-item">⭐ 4.9 — "Completely upgraded our online presence." – Summit Plumbing Co.</div>
+    <div class="review-item">⭐ 5.0 — "Booking automation improved response time instantly." – Liberty Cleaning Group</div>
     <div class="review-item">⭐ 4.8 — "Professional design and smooth process." – Keystone Auto Detail</div>
-    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs every week." – NorthStar Roofing</div>
-    <div class="review-item">⭐ 4.9 — "Reliable and easy to work with." – Prime Edge Landscaping</div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2 class="section-title">What We Offer</h2>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Professional Websites</h3>
-        <p>Modern, mobile-optimized websites designed to build trust and convert visitors into real customers.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Online Booking Systems</h3>
-        <p>Simple scheduling setups so clients can book appointments without calling or waiting.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Automation Setup</h3>
-        <p>Email and SMS follow-ups that ensure every new inquiry gets a fast response.</p>
-      </div>
-    </div>
+    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs weekly." – NorthStar Roofing</div>
   </div>
 </section>
 
@@ -281,8 +239,9 @@ footer {
       <div class="pricing-card">
         <h3>Launch</h3>
         <div class="price">$399</div>
+        <div class="payment-option">or $149/month for 3 months</div>
         <ul>
-          <li>1-Page Website</li>
+          <li>1-Page Professional Website</li>
           <li>Mobile Optimization</li>
           <li>Contact Form Setup</li>
         </ul>
@@ -292,6 +251,7 @@ footer {
       <div class="pricing-card popular">
         <h3>Growth</h3>
         <div class="price">$699</div>
+        <div class="payment-option">or $249/month for 3 months</div>
         <ul>
           <li>Multi-Section Website</li>
           <li>Online Booking Integration</li>
@@ -304,6 +264,7 @@ footer {
       <div class="pricing-card">
         <h3>Scale</h3>
         <div class="price">$949</div>
+        <div class="payment-option">or $329/month for 3 months</div>
         <ul>
           <li>Full Website Build</li>
           <li>Booking + SMS Setup</li>
@@ -314,6 +275,12 @@ footer {
       </div>
 
     </div>
+
+    <div class="maintenance">
+      <h3>Optional Ongoing Maintenance</h3>
+      <p>$99/month — Includes updates, small edits, and technical support.</p>
+    </div>
+
   </div>
 </section>
 
@@ -323,6 +290,8 @@ footer {
 
 </body>
 </html>
+
+
 
 
 
