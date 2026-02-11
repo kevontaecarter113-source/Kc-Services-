@@ -48,7 +48,7 @@ nav {
 nav a {
   color: #d1d5db;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 0.9rem;
 }
 
@@ -58,7 +58,7 @@ nav a:hover {
 
 /* HERO */
 header {
-  padding: 100px 0;
+  padding: 100px 0 60px 0;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
 }
 
@@ -92,6 +92,38 @@ header p {
 
 .btn:hover {
   background: #1d4ed8;
+}
+
+/* REVIEW SECTION */
+.review-section {
+  background: #1f2937;
+  overflow: hidden;
+  padding: 20px 0;
+  border-top: 1px solid #374151;
+  border-bottom: 1px solid #374151;
+}
+
+.review-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 35s linear infinite;
+}
+
+.review-item {
+  min-width: 280px;
+  margin-right: 60px;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* SECTIONS */
@@ -146,33 +178,7 @@ section {
   margin-bottom: 8px;
 }
 
-/* FLOATING REVIEW TICKER */
-.review-ticker {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #1f2937;
-  overflow: hidden;
-  white-space: nowrap;
-  border-top: 1px solid #374151;
-}
-
-.review-track {
-  display: inline-block;
-  padding: 15px 0;
-  animation: scroll 25s linear infinite;
-}
-
-.review-track span {
-  margin-right: 80px;
-  color: #e5e7eb;
-}
-
-@keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
+/* FOOTER */
 footer {
   text-align: center;
   padding: 40px 0;
@@ -197,7 +203,7 @@ footer {
   <div class="container">
     <h1>Automate Your Business & Book More Clients</h1>
     <p>
-      Professional websites and simple automation systems built for local businesses 
+      Professional websites and automation systems built for local businesses 
       that want faster responses and more booked jobs.
     </p>
     <a href="tel:2672651426" class="btn">
@@ -205,6 +211,24 @@ footer {
     </a>
   </div>
 </header>
+
+<!-- MOVING REVIEWS -->
+<section class="review-section">
+  <div class="review-wrapper">
+    <div class="review-track">
+      <div class="review-item">⭐ 4.9 — "Website looks super professional." – Local Contractor</div>
+      <div class="review-item">⭐ 5.0 — "Saved us hours every week." – Cleaning Company</div>
+      <div class="review-item">⭐ 4.8 — "Fast setup and easy process." – Service Business</div>
+      <div class="review-item">⭐ 5.0 — "More booked calls instantly." – Small Business</div>
+
+      <!-- duplicated for smooth loop -->
+      <div class="review-item">⭐ 4.9 — "Website looks super professional." – Local Contractor</div>
+      <div class="review-item">⭐ 5.0 — "Saved us hours every week." – Cleaning Company</div>
+      <div class="review-item">⭐ 4.8 — "Fast setup and easy process." – Service Business</div>
+      <div class="review-item">⭐ 5.0 — "More booked calls instantly." – Small Business</div>
+    </div>
+  </div>
+</section>
 
 <section id="pricing">
   <div class="container">
@@ -216,7 +240,7 @@ footer {
         <h3>Launch</h3>
         <div class="price">$349</div>
         <ul>
-          <li>1-Page Professional Website</li>
+          <li>1-Page Website</li>
           <li>Mobile Optimized</li>
           <li>Contact Form Setup</li>
         </ul>
@@ -241,7 +265,7 @@ footer {
         <ul>
           <li>Full Website Build</li>
           <li>Booking + SMS Setup</li>
-          <li>Lead Follow-Up Automation</li>
+          <li>Lead Automation</li>
           <li>30 Days Support</li>
         </ul>
         <a href="tel:2672651426" class="btn">Upgrade</a>
@@ -255,16 +279,8 @@ footer {
   <p>© 2026 KC Services</p>
 </footer>
 
-<div class="review-ticker">
-  <div class="review-track">
-    <span>⭐ 4.9 Rating | "Website looks super professional now." – Local Contractor</span>
-    <span>⭐ 5.0 Rating | "Booking automation saved us hours every week." – Cleaning Company</span>
-    <span>⭐ 4.8 Rating | "Fast setup and easy to work with." – Service Business Owner</span>
-    <span>⭐ 5.0 Rating | "We started getting more booked calls immediately." – Small Business</span>
-  </div>
-</div>
-
 </body>
 </html>
+
 
 
