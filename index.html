@@ -1,107 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kasey | Booking & Website Management</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasey | Business Automation & Booking Systems</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  padding: 100px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #94a3b8;
+}
+
+footer {
+  background: #0b1220;
+  text-align: center;
+  padding: 40px 0;
+  color: #64748b;
+}
+</style>
 </head>
+
 <body>
 
-<header class="hero">
-  <h1>I help local businesses manage bookings, emails, and simple websites.</h1>
-  <p>So you don’t miss customers or waste time on admin work.</p>
-  <a href="#contact" class="btn">Book a Free 10-Min Call</a>
+<!-- HERO -->
+<header>
+  <div class="container">
+    <h1>Turn Missed Calls Into Booked Clients — Automatically</h1>
+    <p>
+      I help local service businesses capture leads, automate follow-ups, 
+      and book appointments 24/7 so you stop losing money to slow responses.
+    </p>
+    <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank" class="btn">
+      Book Your Free 10-Minute Strategy Call
+    </a>
+  </div>
 </header>
 
-<section class="about">
-  <h2>Who I Am</h2>
-  <p>
-    I’m Kasey. I help small businesses clean up their online presence and
-    handle booking and customer communication so owners can focus on running
-    their business instead of answering messages all day.
-  </p>
-</section>
+<!-- WHAT I DO -->
+<section>
+  <div class="container">
+    <h2 class="section-title">What I Do</h2>
 
-<section class="services">
-  <h2>What I Do</h2>
+    <div class="services">
+      <div class="card">
+        <h3>High-Converting Websites</h3>
+        <p>
+          Clean, modern websites built to turn visitors into paying customers — not just look good.
+        </p>
+      </div>
 
-  <div class="service-box">
-    <h3>Simple Websites</h3>
-    <p>
-      Clean, fast 1–3 page websites that look professional and work on all
-      devices.
-    </p>
-  </div>
+      <div class="card">
+        <h3>Automated Booking Systems</h3>
+        <p>
+          Online scheduling, confirmations, reminders, and lead capture so clients can book instantly.
+        </p>
+      </div>
 
-  <div class="service-box">
-    <h3>Booking Systems</h3>
-    <p>
-      Online booking, automatic confirmations, calendar syncing, and lead
-      capture.
-    </p>
-  </div>
-
-  <div class="service-box">
-    <h3>Email & Appointment Management</h3>
-    <p>
-      I manage customer emails, messages, follow-ups, and scheduling so nothing
-      falls through.
-    </p>
+      <div class="card">
+        <h3>Follow-Up Automation</h3>
+        <p>
+          Text and email follow-ups that respond fast, reduce no-shows, and close more jobs.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="how-it-works">
-  <h2>How It Works</h2>
-  <ol>
-    <li>Quick 10-minute call to understand your setup</li>
-    <li>I build or clean up your website & booking system</li>
-    <li>I manage bookings and messages monthly</li>
-  </ol>
-</section>
+<!-- WHY ME -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Why Work With Me?</h2>
 
-<section class="pricing">
-  <h2>Pricing</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Built for Local Businesses</h3>
+        <p>
+          Perfect for contractors, barbers, detailers, cleaners, and any business that relies on bookings.
+        </p>
+      </div>
 
-  <div class="price-box">
-    <h3>One-Time Setup</h3>
-    <p>Website + booking system setup</p>
-    <strong>Starting at $500</strong>
+      <div class="card">
+        <h3>Automation First</h3>
+        <p>
+          Everything I build is designed to save time and increase revenue.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Simple & Reliable</h3>
+        <p>
+          No bloated systems. Just clean setups that work every day without stress.
+        </p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="price-box">
-    <h3>Monthly Management</h3>
-    <p>Bookings, emails, updates & support</p>
-    <strong>$500 – $1,000 / month</strong>
+<!-- HOW IT WORKS -->
+<section>
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>1. Strategy Call</h3>
+        <p>
+          We identify where you're losing leads and what can be automated.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>2. Build & Launch</h3>
+        <p>
+          I design your website and install booking & automation systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>3. Optimize & Scale</h3>
+        <p>
+          Optional ongoing management to keep everything running smoothly.
+        </p>
+      </div>
+    </div>
   </div>
-
-  <p class="note">Final pricing depends on message volume and needs.</p>
 </section>
 
-<section class="benefits">
-  <h2>Why This Helps</h2>
-  <ul>
-    <li>Fewer missed inquiries</li>
-    <li>Less time on your phone</li>
-    <li>Cleaner scheduling</li>
-    <li>More booked customers</li>
-  </ul>
+<!-- PRICING -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Pricing</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Starter System</h3>
+        <p>
+          $500 Setup<br>
+          $150 / month
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Growth System</h3>
+        <p>
+          $1,000 Setup<br>
+          $300 / month
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Full Automation</h3>
+        <p>
+          $2,000 Setup<br>
+          $500 / month
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2>Let’s Talk</h2>
-  <p>Book a quick call or reach out directly.</p>
-
-  <a href="https://calendly.com/YOURNAME/10min" class="btn">Book a Free Call</a>
-
-  <p class="contact-links">
-    Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a><br/>
-    Instagram: <a href="#">@yourhandle</a>
-  </p>
+<!-- FINAL CTA -->
+<section>
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title">Ready to Stop Missing Customers?</h2>
+    <a href="https://calendly.com/YOURUSERNAME/10min" target="_blank" class="btn">
+      Schedule Your Free Strategy Call
+    </a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Kasey — Booking & Website Management</p>
+  <p>© 2026 Kasey | Business Automation</p>
 </footer>
 
 </body>
