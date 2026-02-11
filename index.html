@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KC Services | Websites & Automation</title>
+<title>KC Services | Web & Automation Solutions</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -31,7 +31,7 @@ nav {
 
 .nav-container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -41,12 +41,13 @@ nav {
 .logo {
   font-weight: 700;
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 nav a {
   color: #cbd5e1;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 30px;
   font-size: 0.95rem;
 }
 
@@ -55,30 +56,31 @@ nav a:hover {
 }
 
 header {
-  padding: 110px 0 70px 0;
+  padding: 120px 0 70px 0;
   text-align: center;
 }
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
 }
 
 header h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
 header p {
   color: #94a3b8;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto 35px;
+  font-size: 1.05rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 15px 34px;
   background: #2563eb;
   color: white;
   text-decoration: none;
@@ -103,12 +105,12 @@ header p {
 
 .review-track {
   display: flex;
-  animation: scroll 40s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 .review-item {
-  min-width: 320px;
-  margin-right: 70px;
+  min-width: 350px;
+  margin-right: 80px;
   font-size: 0.9rem;
   color: #e2e8f0;
 }
@@ -119,15 +121,40 @@ header p {
 }
 
 section {
-  padding: 90px 0;
+  padding: 100px 0;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 60px;
+  font-size: 2.2rem;
+  margin-bottom: 70px;
 }
 
+/* SERVICES */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #1e293b;
+  padding: 35px;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  border-color: #2563eb;
+  transform: translateY(-6px);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+}
+
+/* PRICING */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -136,8 +163,8 @@ section {
 
 .pricing-card {
   background: #1e293b;
-  padding: 35px;
-  border-radius: 12px;
+  padding: 40px;
+  border-radius: 14px;
   text-align: center;
   border: 1px solid #334155;
   transition: 0.3s;
@@ -153,7 +180,7 @@ section {
 }
 
 .price {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 20px 0;
   font-weight: 700;
 }
@@ -161,7 +188,7 @@ section {
 .payment-option {
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .pricing-card ul {
@@ -174,18 +201,18 @@ section {
   margin-bottom: 10px;
 }
 
-.maintenance {
-  margin-top: 60px;
-  text-align: center;
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 12px;
+.partnership-box {
+  margin-top: 70px;
+  padding: 45px;
+  background: #111827;
+  border-radius: 14px;
   border: 1px solid #334155;
+  text-align: center;
 }
 
 footer {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
   color: #64748b;
 }
 </style>
@@ -197,6 +224,7 @@ footer {
   <div class="nav-container">
     <div class="logo">KC Services</div>
     <div>
+      <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="tel:2672651426">Call</a>
     </div>
@@ -205,91 +233,119 @@ footer {
 
 <header>
   <div class="container">
-    <h1>Websites & Automation Built for Local Businesses</h1>
+    <h1>Professional Websites & Automation for Growing Businesses</h1>
     <p>
-      We create clean, professional websites and simple automation systems 
-      that help service businesses respond faster and book more jobs.
+      KC Services helps service-based businesses modernize their online presence, 
+      streamline booking, and automate client communication — so you never miss a lead.
     </p>
     <a href="tel:2672651426" class="btn">
-      Call 267-265-1426
+      Speak With Us: 267-265-1426
     </a>
   </div>
 </header>
 
 <section class="review-section">
   <div class="review-track">
-    <div class="review-item">⭐ 4.9 — "Completely upgraded our online presence." – Summit Plumbing Co.</div>
-    <div class="review-item">⭐ 5.0 — "Booking automation improved response time instantly." – Liberty Cleaning Group</div>
-    <div class="review-item">⭐ 4.8 — "Professional design and smooth process." – Keystone Auto Detail</div>
-    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs weekly." – NorthStar Roofing</div>
+    <div class="review-item">⭐ 4.9 — "Completely transformed our brand image." – Summit Plumbing Co.</div>
+    <div class="review-item">⭐ 5.0 — "Automation improved our booking rate instantly." – Liberty Cleaning Group</div>
+    <div class="review-item">⭐ 4.8 — "Professional, reliable, and efficient." – Keystone Auto Detail</div>
+    <div class="review-item">⭐ 5.0 — "We’ve seen consistent weekly growth." – NorthStar Roofing</div>
 
-    <div class="review-item">⭐ 4.9 — "Completely upgraded our online presence." – Summit Plumbing Co.</div>
-    <div class="review-item">⭐ 5.0 — "Booking automation improved response time instantly." – Liberty Cleaning Group</div>
-    <div class="review-item">⭐ 4.8 — "Professional design and smooth process." – Keystone Auto Detail</div>
-    <div class="review-item">⭐ 5.0 — "We’ve seen more scheduled jobs weekly." – NorthStar Roofing</div>
+    <div class="review-item">⭐ 4.9 — "Completely transformed our brand image." – Summit Plumbing Co.</div>
+    <div class="review-item">⭐ 5.0 — "Automation improved our booking rate instantly." – Liberty Cleaning Group</div>
+    <div class="review-item">⭐ 4.8 — "Professional, reliable, and efficient." – Keystone Auto Detail</div>
+    <div class="review-item">⭐ 5.0 — "We’ve seen consistent weekly growth." – NorthStar Roofing</div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Custom Website Development</h3>
+        <p>Modern, mobile-optimized websites designed to build trust and convert visitors into clients.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Booking & Scheduling Integration</h3>
+        <p>Streamlined appointment systems with automated confirmations and reminders.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Automation & Lead Follow-Up</h3>
+        <p>Email and SMS systems that respond instantly and nurture new leads automatically.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="pricing">
   <div class="container">
-    <h2 class="section-title">Simple Pricing</h2>
+    <h2 class="section-title">Service Packages</h2>
 
     <div class="pricing-grid">
 
       <div class="pricing-card">
-        <h3>Launch</h3>
-        <div class="price">$399</div>
-        <div class="payment-option">or $149/month for 3 months</div>
+        <h3>Foundation</h3>
+        <div class="price">$499</div>
+        <div class="payment-option">or $199/month for 3 months</div>
         <ul>
-          <li>1-Page Professional Website</li>
+          <li>1–2 Page Professional Website</li>
           <li>Mobile Optimization</li>
-          <li>Contact Form Setup</li>
+          <li>Contact & Inquiry Setup</li>
         </ul>
         <a href="tel:2672651426" class="btn">Get Started</a>
       </div>
 
       <div class="pricing-card popular">
         <h3>Growth</h3>
-        <div class="price">$699</div>
-        <div class="payment-option">or $249/month for 3 months</div>
+        <div class="price">$899</div>
+        <div class="payment-option">or $349/month for 3 months</div>
         <ul>
           <li>Multi-Section Website</li>
           <li>Online Booking Integration</li>
-          <li>Email Confirmation Setup</li>
-          <li>Basic Automation</li>
+          <li>Email Confirmation System</li>
+          <li>Basic Automation Setup</li>
         </ul>
         <a href="tel:2672651426" class="btn">Most Popular</a>
       </div>
 
       <div class="pricing-card">
-        <h3>Scale</h3>
-        <div class="price">$949</div>
-        <div class="payment-option">or $329/month for 3 months</div>
+        <h3>Advanced</h3>
+        <div class="price">$1,199</div>
+        <div class="payment-option">or $449/month for 3 months</div>
         <ul>
-          <li>Full Website Build</li>
-          <li>Booking + SMS Setup</li>
-          <li>Lead Automation</li>
-          <li>30 Days Support</li>
+          <li>Full Custom Website</li>
+          <li>Booking + SMS Automation</li>
+          <li>Lead Follow-Up Workflows</li>
+          <li>30 Days Priority Support</li>
         </ul>
         <a href="tel:2672651426" class="btn">Upgrade</a>
       </div>
 
     </div>
 
-    <div class="maintenance">
-      <h3>Optional Ongoing Maintenance</h3>
-      <p>$99/month — Includes updates, small edits, and technical support.</p>
+    <div class="partnership-box">
+      <h3>Ongoing Partnership Plan</h3>
+      <p style="margin:20px 0; color:#94a3b8;">
+        $149/month — Includes monthly updates, performance monitoring, 
+        content edits, and continued automation optimization.
+      </p>
+      <a href="tel:2672651426" class="btn">Discuss Partnership</a>
     </div>
 
   </div>
 </section>
 
 <footer>
-  <p>© 2026 KC Services</p>
+  <p>© 2026 KC Services. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
 
 
 
